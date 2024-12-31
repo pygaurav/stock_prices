@@ -16,6 +16,18 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "start": {
+      "cache": false,
+      "persistent": true
+    },
+    "startConsumerWorkerProcess": {
+      "cache": false,
+      "persistent": true
+    },
+    "startPublisherWorkerProcess": {
+      "cache": false,
+      "persistent": true
     }
   }
 }

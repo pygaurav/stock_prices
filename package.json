@@ -5,7 +5,10 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "start": "turbo start --filter=web --filter=api",
+    "startConsumerWorkerProcess": "turbo startConsumerWorkerProcess --filter=stock-worker",
+    "startPublisherWorkerProcess": "turbo startPublisherWorkerProcess --filter=stock-worker"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
@@ -18,6 +21,7 @@
   "packageManager": "yarn@1.22.21",
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "workers/*"
   ]
 }

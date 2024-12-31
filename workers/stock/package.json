@@ -1,0 +1,15 @@
+{
+  "name": "stock-worker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "startConsumerWorkerProcess": "node stockConsumer.js",
+    "startPublisherWorkerProcess": "node stockPublish.js"
+  },
+  "dependencies": {
+    "@repo/lib-kafka": "*",
+    "@repo/lib-redis": "*",
+    "@repo/lib-constants": "*"
+  }
+}
